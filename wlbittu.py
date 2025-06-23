@@ -88,7 +88,10 @@ async def like_handler(msg: Message):
         return
 
     wait = await msg.reply("⏳ Sending Likes, Please Wait.....")
-    url = f"https://anish-likes.vercel.app/like?server_name={region.lower()}&uid={uid}&key=jex4rrr"
+    
+    # ✅ UPDATED LINK BELOW:
+    url = f"https://wlbittu-bot.onrender.com/like?server_name={region.lower()}&uid={uid}&key=jex4rrr"
+    
     data = await fetch_json(url)
 
     if not data:
